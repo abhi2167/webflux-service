@@ -1,0 +1,15 @@
+spring:
+    r2dbc:
+      url: r2dbc:h2:mem:///testdb
+      username: sa
+      password:
+      initialization-mode: always
+    jpa:
+      generate-ddl: true
+    h2:
+      console:
+        enabled: true
+        path: /h2-console
+
+endpoints:
+  comments-service: 'https://jsonplaceholder.typicode.com'
